@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="pt-12 lg:pt-20 lg:bg-white bg-[rgba(168,213,186,0.3)]">
       <div className="container mx-auto lg:px-10">
-        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-11 lg:gap-32 text-center lg:mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-11 lg:gap-18 xl:gap-32 text-center lg:mb-20">
           <div>
             <h3 className="font-bold text-[1.25rem] dm-sans text-[#4F4F4F] mb-[18px] lg:mb-10">
               Product
