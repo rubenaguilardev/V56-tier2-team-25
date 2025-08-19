@@ -21,11 +21,11 @@ const Header = () => {
             </div>
                 <div className='w-full flex lg:gap-4 items-center justify-center md:justify-start cursor-pointer' >
                     <img 
-                        className='hidden md:block' src={logo} alt="logo"
+                        className='hidden lg:block' src={logo} alt="logo"
                         onClick={() => navigate("/")}
                     />
                     <h1 
-                        className='text-2xl lg:text-[2rem] font-medium text-shadow-md text-[#006B44]'
+                        className='text-2xl lg:text-[2rem] lg:ml-0 md:ml-20 font-medium text-shadow-md text-[#006B44]'
                         onClick={() => navigate("/")}
                     >
                         Surgery Status
