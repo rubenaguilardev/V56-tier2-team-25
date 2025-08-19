@@ -31,17 +31,7 @@ const WaitingRoom = () => {
 
   useEffect(() => {}, [patients]);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPage((prevPage) =>
-        (prevPage + 1) * pageSize >= patients.length ? 0 : prevPage + 1
-      );
-    }, intervalTime);
-
-    return () => clearInterval(interval);
-  }, [patients.length]);
-
-  const options = [
+   const options = [
     "Checked-In",
     "Pre-Procedure",
     "In-Progress",
@@ -53,7 +43,17 @@ const WaitingRoom = () => {
 
   const filteredPatients = patients.filter((patient) =>
     options.includes(patient.status)
-  );
+  )
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentPage((prevPage) =>
+        (prevPage + 1) * pageSize >= filteredPatients.length ? 0 : prevPage + 1
+      );
+    }, intervalTime);
+
+    return () => clearInterval(interval);
+  }, [patients.length]);
 
   const sortedPatients = [...filteredPatients].sort((a, b) => a.id - b.id);
 
