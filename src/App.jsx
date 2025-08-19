@@ -36,7 +36,7 @@ function Home() {
         <Header />
         <div className="flex flex-1 flex-col items-center pt-11 pb-15 md:pt-4 md:pb-0 justify-start md:justify-center text-center md:text-left bg-[#F5F3EA]">
           <div className="container flex flex-col lg:flex-row justify-center items-center mx-auto lg:px-10 px-8 lg:gap-18">
-            <div className="flex items-center justify-center w-1/2 lg:w-[53%] xl:w-1/2 mb-6 lg:mb-0 order-0 lg:order-2">
+            <div className="flex items-center justify-center lg:w-[53%] xl:w-1/2 mb-6 lg:mb-0 order-0 lg:order-2">
               <img src={homeImg} className="w-auto object-contain" />
             </div>
             <div className="flex flex-col justify-center w-full lg:w-[62%] xl:w-[47%] lg:space-y-9 xl:space-y-11">
