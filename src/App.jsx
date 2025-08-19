@@ -36,22 +36,22 @@ function Home() {
         <Header />
         <div className="flex flex-1 flex-col items-center pt-11 pb-15 md:pt-4 md:pb-0 justify-start md:justify-center text-center md:text-left bg-[#F5F3EA]">
           <div className="container flex flex-col lg:flex-row justify-center items-center mx-auto lg:px-10 px-8 lg:gap-18">
-            <div className="flex items-center justify-center lg:w-[53%] xl:w-1/2 mb-6 lg:mb-0 order-0 lg:order-2">
+            <div className="flex items-center justify-center lg:w-[54%] xl:w-1/2 mb-6 lg:mb-0 order-0 lg:order-2">
               <img src={homeImg} className="w-auto object-contain" />
             </div>
-            <div className="flex flex-col justify-center w-full lg:w-[62%] xl:w-[47%] lg:space-y-9 xl:space-y-11">
-              <h1 className="text-[1.25rem] lg:text-[2.3rem] xl:text-[3.4rem]  font-semibold lg:font-bold pb-[1rem] text-[#4F4F4F] dm-sans lg:leading-[1.125]">
+            <div className="flex flex-col justify-center w-full md:w-[100%] lg:w-[63%] xl:w-[47%] lg:space-y-9 xl:space-y-11">
+              <h1 className="text-[1.25rem] sm:text-3xl sm:text-center lg:text-left lg:text-[2.3rem] xl:text-[3.4rem]  font-semibold lg:font-bold pb-[1rem] text-[#4F4F4F] dm-sans lg:leading-[1.125]">
                 Get immediate updates on your loved one's surgery
               </h1>
-              <p className="text-sm lg:text-[1rem] xl:text-[1.25rem] leading-6 lg:leading dm-sans text-[#4F4F4F]">
+              <p className="text-sm lg:text-[1.125rem] md:text-[1.2rem] xl:text-[1.25rem] leading-6 lg:leading dm-sans text-[#4F4F4F]">
                 Our mission is to offer timely, compassionate updates during
                 surgery, ensuring families feel informed, supported, and
                 connected every step of the way
               </p>
-              <div className="flex flex-col md:flex-row items-center justify-center lg:justify-start gap-7">
+              <div className="flex flex-col md:flex-row md:mt-12 lg:mt-0 items-center justify-center lg:justify-start gap-7">
                 <button
                   type="submit"
-                  className="bg-[#008C99] text-white text-[1.125rem] mt-12 lg:mt-0 font-bold rounded-[40px] px-13 py-6 cursor-pointer shadow-md/60 hover:bg-[#A8D5BA]"
+                  className="bg-[#008C99] text-white text-[1.125rem] mt-12 md:mt-0 font-bold rounded-[40px] px-13 py-6 cursor-pointer shadow-md/60 hover:bg-[#A8D5BA]"
                   onClick={() => navigate("/FindPatient")}
                 >
                   Get Started <FontAwesomeIcon icon={faArrowRight} />
